@@ -2,11 +2,12 @@ import React, { Component, useState } from "react";
 import "./../styles/App.css";
 
 function App() {
-  const [click, setClick] = useState("");
+  const [para, setPara] = useState("");
   
   function showMsg() {
-    setClick(
-      click == "" ? (
+    console.log(para);
+    setPara(
+      para == "" ? (
         <p id="para">
           Hello, I've learnt to use the full-stack evaluation tool. This makes
           me so happy
@@ -18,9 +19,9 @@ function App() {
   return (
     <div id="main">
       <button id="click" onClick={showMsg}>
-        Click Me!
+        Click Mee!
       </button>
-      {click}
+      {para}
     </div>
   );
 }
